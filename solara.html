@@ -5,29 +5,30 @@
         <meta http-equiv="Content-Type" content="text/html">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="author" content="Pink Portico" />
+        <meta name="author" content="Newertown" />
         <meta charset="UTF-8" />
 
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
         <!-- Layout -->
-        <link rel="stylesheet" href="layout.css" type="text/css"/>
-        <style type="text/css" >
-        body {
-            background: url(images/bg_solara_1280.jpg) no-repeat center center fixed;
-            background-color: #000;
-        }
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <style type="text/css">
+            body {
+                background: url(images/bg_solara_1280.jpg) no-repeat center center fixed;
+                background-color: #000;
+            }
         </style>
 
-        <!-- Google Analytics -->
-        <script type="text/javascript" src="js/googleAnalyticsTracker.js"></script>
-
-        <!-- Google Web Fonts -->
-        <script type="text/javascript" src="js/googleWebFonts.js"></script>
-
-        <!-- jQuery -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>               
-
-        <!-- Sticky Footer -->
-        <script type="text/javascript" src="js/jquery.stickyfooter.js"></script>
+        <!-- JavaScript Files -->
+        <script src="js/googleAnalyticsTracker.js"></script>
+        <script src="js/googleWebFonts.js"></script>
+        <script src="js/jquery.stickyfooter.js"></script>
 
     </head>
 
@@ -36,7 +37,8 @@
             <div class="links_solara">
                 <table id="top" class="table_solara">
                     <tr>
-                        <td><a href="albums/cecimonstervsdonka_solara.zip" onClick="_gaq.push(['_trackEvent', 'Albums', 'Downloaded', 'Solara');" target="_blank">DOWNLOAD ALBUM</a></td>
+                        <td><a href="albums/cecimonstervsdonka_solara.zip"
+                               onClick="_gaq.push(['_trackEvent', 'Albums', 'Downloaded', 'Solara']);" target="_blank">DOWNLOAD ALBUM</a></td>
                         <td>|</td>
                         <td><a href="lyrics/solara.pdf" onClick="_gaq.push(['_trackEvent', 'Lyrics', 'Downloaded', 'Solara']);" target="_blank">DOWNLOAD LYRICS</a></td>
                     </tr>
@@ -50,16 +52,6 @@
                         <td><a href="albums/cecimonstervsdonka_solara.zip" onClick="_gaq.push(['_trackEvent', 'Albums', 'Downloaded', 'Solara']);" target="_blank">DOWNLOAD ALBUM</a></td>
                         <td>|</td>
                         <td><a href="lyrics/solara.pdf" onClick="_gaq.push(['_trackEvent', 'Lyrics', 'Downloaded', 'Solara']);" target="_blank">DOWNLOAD LYRICS</a></td>
-                        <!--
-                        <td><a href="arte/cecimonstervsdonka_adentro-afuera.zip" target="_blank">ARTE</a></td>
-                        -->
-                    </tr>
-                    <tr>
-                        <!--
-                        <td><a href="albums/cecimonstervsdonka_adentro-afuera.zip" target="_blank">ALBUM</a></td>
-                        <td><a href="letras/cecimonstervsdonka_adentro-afuera.zip" target="_blank">LYRICS</a></td>
-                        <td><a href="arte/cecimonstervsdonka_adentro-afuera.zip" target="_blank">ART</a></td>
-                        -->
                     </tr>
                 </table>
                 <table class="table_icons">
@@ -67,18 +59,41 @@
                         <td><a href="index.html" style="color:#fff200">DOWNLOAD ADENTRO AFUERA:</a></td>
                         <td class="album"><a href="index.html"><img border="0" src="images/adentro-afuera_32.png" alt="Adentro Afuera"/></a></td>
                         <td>FOLLOW US ON:</td>
-                        <td><a href="http://twitter.com/cecimonsters" onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Twitter']);" target="_blank"><img border="0" src="images/twitter_32.png" alt="Twitter"/></a></td>
-                        <td><a href="http://www.facebook.com/cecimonstervsdonk" onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Facebook']);" target="_blank"><img border="0" src="images/facebook_32.png" alt="Facebook"/></a></td>
-                        <td><a href="http://www.last.fm/music/Cecimonster+vs+Donka" onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Last.fm']);" target="_blank"><img border="0" src="images/lastfm_32.png" alt="Last.fm"/></a></td>
-                        <td><a href="http://www.myspace.com/cecimonstervsdonka" onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Myspace']);" target="_blank"><img border="0" src="images/myspace_32.png" alt="Myspace"/></a></td>
-                        <td><a href="http://youtu.be/eQhQlf8A6yE" onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'YouTube']);" target="_blank"><img border="0" src="images/youtube_32.png" alt="YouTube"/></a></td>
+                        <td>
+                            <a href="http://twitter.com/cecimonsters"
+                               onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Twitter']);"
+                               target="_blank">
+                                <span class="fa fa-twitter fa-3x yellow"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://www.facebook.com/cecimonstervsdonk"
+                               onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Facebook']);"
+                               target="_blank" class="black">
+                                <span class="fa fa-facebook-official fa-3x yellow"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://player.spotify.com/artist/1VsUpYfxYFg2WtGxrrJHDd"
+                               onClick="_gaq.push(['_trackEvent','Social Media', 'Click', 'Spotify']);"
+                               target="_blank">
+                                <span class="fa fa-spotify fa-3x yellow"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://youtu.be/eQhQlf8A6yE"
+                               onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'YouTube']);"
+                               target="_blank">
+                                <span class="fa fa-youtube fa-3x yellow"></span>
+                            </a>
+                        </td>
                         <td>
                             <a href="http://cecimonstervsdonka.bandcamp.com/"
                                onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Bandcamp']);"
                                target="_blank">
-                               <img border="0"
-                                    src="images/bandcamp_32.png"
-                                    alt="Bandcamp"/>
+                                <img border="0"
+                                     src="images/bandcamp_32.png"
+                                     alt="Bandcamp"/>
                             </a>
                         </td>
                     </tr>

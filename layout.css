@@ -26,6 +26,16 @@ area:hover {
     margin: 0;
 }
 
+.black {
+    color: #000;
+    text-decoration: none;
+}
+
+.yellow {
+    color: #fff200;
+    text-decoration: none;
+}
+
 /* CONTAINERS */
 
 .container {
@@ -66,7 +76,6 @@ area:hover {
 
 .links_solara a:link, a:active, a:visited {
     color: #fff200;
-    opacity: 0.75;
     text-decoration: none;
 }
 
@@ -87,7 +96,6 @@ area:hover {
 
 .links_adentro-afuera a:link, a:active, a:visited {
     color: #6c343d;
-    opacity: 0.75;
     text-decoration: none;
 }
 
@@ -100,7 +108,7 @@ area:hover {
 
 .table_solara {
     text-align: center;
-    border: 0px;
+    border: 0;
     width: 100%;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -108,7 +116,6 @@ area:hover {
 
 .table_solara a:link, a:active, a:visited {
     color: #fff200;
-    opacity: 0.75;
     text-decoration: none;
 }
 
@@ -119,7 +126,7 @@ area:hover {
 
 .table_adentro-afuera {
     text-align: center;
-    border: 0px;
+    border: 0;
     width: 100%;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -127,7 +134,6 @@ area:hover {
 
 .table_adentro-afuera a:link, a:active, a:visited {
     color: #6c343d;
-    opacity: 0.75;
     text-decoration: none;
 }
 
@@ -139,7 +145,7 @@ area:hover {
 .table_icons {
     font-size: 14px;
     text-align: center;
-    border: 0px;
+    border: 0;
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
@@ -180,7 +186,7 @@ area:hover {
 @media screen and (max-height: 640px) {
     .links_solara {
         color: #ffffff;
-        padding: 0px;
+        padding: 0;
         display: block;
         line-height: 30px;
         margin: auto;
@@ -189,7 +195,7 @@ area:hover {
     }
     .links_adentro-afuera {
         color: #ffffff;
-        padding: 0px;
+        padding: 0;
         display: block;
         line-height: 30px;
         margin: auto;
@@ -210,7 +216,7 @@ area:hover {
 @media screen and (max-width: 600px) {
     .links_solara {
         color: #ffffff;
-        padding: 0px;
+        padding: 0;
         display: block;
         line-height: 30px;
         margin: auto;
@@ -219,7 +225,7 @@ area:hover {
     }
     .links_adentro-afuera {
         color: #ffffff;
-        padding: 0px;
+        padding: 0;
         display: block;
         line-height: 30px;
         margin: auto;
@@ -231,13 +237,13 @@ area:hover {
 @media screen and (max-width: 480px) {
     .table_adentro-afuera {
         text-align: center;
-        border: 0px;
+        border: 0;
         padding: 0;
         width: 100%;
     }
     .table_solara {
         text-align: center;
-        border: 0px;
+        border: 0;
         padding: 0;
         width: 100%;
     }
