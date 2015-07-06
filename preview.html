@@ -51,10 +51,13 @@
         </div>
         <div class="row">
             <div class="col-md-12 empty-beaches-water">
-                <div class="row empty-beaches-margin"></div>
+                <div class="row empty-beaches-margin-lower"></div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 empty-beaches-text">
-                        <h3>follow us on:</h3>
+                    <div class="col-lg-4
+                                col-md-6
+                                col-sm-6
+                                col-xs-12 empty-beaches-text">
+                        <h4>follow:</h4>
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <a href="http://twitter.com/cecimonsters"
@@ -84,6 +87,18 @@
                                    target="_blank">
                                     <span class="fa fa-youtube fa-3x black"></span>
                                 </a>
+                            </div>
+                        </div>
+                        <h4>download:</h4>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <img class="img-responsive icon-96"
+                                     src="images/solara-128.png" alt="Solara" />
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <img class="img-responsive icon-96"
+                                 src="images/adentro-afuera-128.jpg"
+                                 alt="Adentro-Afuera" />
                             </div>
                         </div>
                     </div>
@@ -235,15 +250,17 @@
                 var buffer = 10;
                 var $emptyBeachesWater = $('.empty-beaches-water');
                 var $emptyBeachesMargin = $('.empty-beaches-margin');
+                var $emptyBeachesMarginLower = $('.empty-beaches-margin-lower');
                 var $emptyBeachesDetail = $('.empty-beaches-detail');
                 var $emptyBeachesTitle = $('.empty-beaches-title');
                 $emptyBeachesWater.height(h / 2);
                 $emptyBeachesDetail.height(h / 2);
                 var marginTop = h / 4 + buffer;
                 var textHeight = $emptyBeachesTitle.height();
-                var textMargin = (h - textHeight) / 2 - marginTop - buffer;
+                var textMargin = (h - textHeight) / 2 - marginTop - buffer * 2;
                 $emptyBeachesWater.css({ 'margin-top' : -marginTop + 'px' });
                 $emptyBeachesMargin.height(marginTop);
+                $emptyBeachesMarginLower.height(4 * marginTop / 7);
                 $emptyBeachesTitle.css({ 'margin-top' : textMargin + 'px' });
             }
 

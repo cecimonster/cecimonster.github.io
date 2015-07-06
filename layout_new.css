@@ -42,6 +42,7 @@ body {
 .empty-beaches {
     background: url(images/empty-beaches.jpg) no-repeat scroll;
     background-size: cover;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
@@ -57,6 +58,10 @@ body {
     padding-left: 50px;
 }
 
+.empty-beaches h1, .empty-beaches h4 {
+    font-weight: 200;
+}
+
 .adentro-afuera-title, .solara-title {
     font-size: 80px;
 }
@@ -67,6 +72,16 @@ body {
 
 .rectangle-colors {
 
+}
+
+.icon-128 {
+    width: 128px;
+    height: 128px;
+}
+
+.icon-96 {
+    width: 96px;
+    height: 96px;
 }
 
 area:hover {
