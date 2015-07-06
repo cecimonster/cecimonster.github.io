@@ -1,0 +1,263 @@
+/* 
+    Document   : layout
+    Created on : 01-Aug-2012, 00:00:00
+    Author     : juancarlosfarah
+    Description:
+    Purpose of the stylesheet follows.
+*/
+
+/* Standard Template Elements---------------------------------- */
+
+
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.album {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.adentro-afuera {
+    background: url(images/adentro-afuera-tile.png) repeat-x scroll;
+    background-size: auto 100%;
+}
+
+.solara {
+    background: url(images/bg_solara_1280.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.empty-beaches-island {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.empty-beaches {
+    background: url(images/empty-beaches.jpg) no-repeat scroll;
+    background-size: cover;
+
+}
+
+.empty-beaches-water {
+    background: url(images/empty-beaches-water.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.5;
+    background-clip: content-box;
+}
+
+.empty-beaches-text, .adentro-afuera-text, .solara-text {
+    padding-left: 50px;
+}
+
+.adentro-afuera-title, .solara-title {
+    font-size: 80px;
+}
+
+.album-title, .links {
+    opacity: 0.75;
+}
+
+.rectangle-colors {
+
+}
+
+area:hover {
+    cursor: pointer;
+}
+
+
+.black {
+    color: #000;
+    text-decoration: none;
+}
+
+.yellow {
+    color: #fff200;
+    text-decoration: none;
+}
+
+.magenta {
+    color: #6c343d;
+}
+
+.white {
+    color: white;
+}
+
+/* CONTAINERS */
+
+.container_hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+#top {
+    visibility: hidden;
+}
+
+#bottom {
+    visibility: visible;
+}
+
+/* LINKS */
+
+.links_solara {
+    color: #fff200;
+    padding: 2px;
+    line-height: 36px;
+    margin: auto;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.links_solara a:link, a:active, a:visited {
+    color: #fff200;
+    text-decoration: none;
+}
+
+.links_solara a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.links_adentro-afuera {
+    color: #6c343d;
+    padding: 2px;
+    line-height: 36px;
+    margin: auto;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.links_adentro-afuera a:link, a:active, a:visited {
+    color: #6c343d;
+    text-decoration: none;
+}
+
+.links_adentro-afuera a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* TABLES */
+
+.table_solara {
+    text-align: center;
+    border: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.table_solara a:link, a:active, a:visited {
+    color: #fff200;
+    text-decoration: none;
+}
+
+.table_solara a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.table_adentro-afuera {
+    text-align: center;
+    border: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.table_adentro-afuera a:link, a:active, a:visited {
+    color: #6c343d;
+    text-decoration: none;
+}
+
+.table_adentro-afuera a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.table_icons {
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.table_icons img {
+    vertical-align: middle;
+}
+
+.table_icons td.album img {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.table_icons a:hover {
+    opacity: 0.5;
+}
+
+
+/* ALTERNATIVE SCREENS */
+
+@media screen and (max-height: 640px) {
+    .links_solara {
+        color: #ffffff;
+        padding: 0;
+        display: block;
+        line-height: 30px;
+        margin: auto;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .links_adentro-afuera {
+        color: #ffffff;
+        padding: 0;
+        display: block;
+        line-height: 30px;
+        margin: auto;
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .adentro-afuera-title, .solara-title {
+        font-size: 70px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .adentro-afuera-title, .solara-title {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .adentro-afuera-title, .solara-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adentro-afuera-title, .solara-title {
+        font-size: 36px;
+    }
+}
