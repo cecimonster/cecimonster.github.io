@@ -46,19 +46,22 @@ body {
 
 }
 
-.empty-beaches-water {
-    background: url(images/empty-beaches-water.png) no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    opacity: 0.5;
-    background-clip: content-box;
-}
-
 .empty-beaches-text, .adentro-afuera-text, .solara-text {
     padding-left: 50px;
 }
 
-.empty-beaches h1, .empty-beaches h4 {
+.empty-beaches-water {
+    background: url(images/empty-beaches-water.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.5;
+    background-clip: content-box;
+}
+
+.empty-beaches h1, .empty-beaches h2, .empty-beaches h3 {
+    font-weight: 200;
+}
+
+.links h4 {
     font-weight: 200;
 }
 
