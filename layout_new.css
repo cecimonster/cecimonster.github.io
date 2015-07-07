@@ -53,7 +53,7 @@ body {
 .empty-beaches-water {
     background: url(images/empty-beaches-water.png) no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.6;
     background-clip: content-box;
 }
 
