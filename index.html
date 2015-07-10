@@ -74,7 +74,7 @@
                                visible-lg">
 
                             <a class="h2 album-title" id="eb-zip" target="_blank"
-                               href="albums/cecimonstervsdonka_empty-beaches.zip"
+                               href="albums/cecimonstervsdonka-empty_beaches.zip"
                                onClick="_gaq.push(['_trackEvent',
                                                    'Albums',
                                                    'Downloaded',
@@ -319,8 +319,7 @@
                 $window = $(window),
                 minHeight = 600;
 
-        var numAlbums = $albums.length;
-        $albums.each(function(index) {
+        $albums.each(function() {
 
             var wh = $window.height();
             var effectiveHeight = Math.max(wh, minHeight);
@@ -329,7 +328,9 @@
 
             var height = effectiveHeight - paddingBottom - paddingTop;
 
+            // Set height.
             $(this).height(height);
+            var h = height;
 
             if ($(this).hasClass('empty-beaches')) {
                 var w = $(this).width();
@@ -376,13 +377,16 @@
                 });
             }
 
+
             if ($(this).hasClass('adentro-afuera')) {
-                var h = $(this).height();
+
                 var $rectangleColors = $('.rectangle-colors'),
-                        $adentroAfueraMargin = $('.adentro-afuera-margin'),
-                        $adentroAfueraMarginLow = $('.adentro-afuera-margin-lower'),
-                        rectangleHeight = h / 6,
-                        rectanglePadding = h / 6;
+                    $adentroAfueraMargin = $('.adentro-afuera-margin'),
+                    $adentroAfueraMarginLow = $('.adentro-afuera-margin-lower'),
+                    rectangleHeight = h / 6,
+                    rectanglePadding = h / 6;
+
+                // Set heights.
                 $rectangleColors.height(rectangleHeight);
                 $adentroAfueraMargin.height(rectanglePadding);
 
@@ -408,9 +412,10 @@
             }
 
             if ($(this).hasClass('solara')) {
-                var h = $(this).height(),
-                        $solaraMargin = $('.solara-margin'),
-                        solaraMargin = 3 * h / 5;
+                var $solaraMargin = $('.solara-margin'),
+                    solaraMargin = 3 * h / 5;
+
+                // Set heights.
                 $solaraMargin.height(solaraMargin);
 
                 if (height < 600) {
