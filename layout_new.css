@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : layout
     Created on : 01-Aug-2012, 00:00:00
     Author     : juancarlosfarah
@@ -47,7 +47,7 @@ body {
 }
 
 .empty-beaches-text, .adentro-afuera-text, .solara-text {
-    padding-left: 50px;
+    padding-left: 25px;
 }
 
 .empty-beaches-water {
@@ -65,7 +65,10 @@ body {
     font-weight: 200;
 }
 
-.download-eb:hover, .download-aa:hover, .download-s:hover {
+.download-eb:hover,
+.download-aa:hover,
+.download-s:hover,
+.download-wilu:hover {
     cursor: pointer;
 }
 
@@ -108,6 +111,11 @@ body {
 .icon-78 {
     width: 78px;
     height: 78px;
+}
+
+.icon-64 {
+    width: 64px;
+    height: 64px;
 }
 
 area:hover {
