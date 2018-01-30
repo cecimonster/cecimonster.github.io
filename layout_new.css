@@ -61,7 +61,8 @@ body {
     font-weight: 200;
 }
 
-.links h4 {
+.links h4,
+.links-empty-beaches h4 {
     font-weight: 200;
 }
 
@@ -92,6 +93,10 @@ body {
 
 .album-title, .links {
     opacity: 0.75;
+}
+
+.links-empty-beaches {
+    opacity: 1;
 }
 
 .rectangle-colors {
