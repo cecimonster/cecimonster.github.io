@@ -68,16 +68,16 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white a-big-house-by-the-lake-text">
                 <h1 class="a-big-house-by-the-lake-band-name">
-                    Cecimonster vs Donka
-                </h1>
-                <a class="h1 album-title a-big-house-by-the-lake-album-title disabled" id="abhbtl-zip" target="_blank"
+                    <a class="h1 a-big-house-by-the-lake-album-title" id="abhbtl-zip" target="_blank"
 
-                   onClick="_gaq.push(['_trackEvent',
+                       onClick="_gaq.push(['_trackEvent',
                                        'Albums',
                                        'Downloaded',
                                        'A Big House By The Lake']);" download>
-                    A Big House By The Lake
-                </a>
+                        A Big House By The Lake
+                    </a>
+                    <span class="nobr">Cecimonster vs Donka</span>
+                </h1>
             </div>
         </div>
         <div class="row a-big-house-by-the-lake-margin-lower"></div>
@@ -512,7 +512,7 @@
                 var $aBigHouseByTheLakeMargin = $('.a-big-house-by-the-lake-margin');
                 var $aBigHouseByTheLakeMarginLower = $('.a-big-house-by-the-lake-margin-lower');
                 var aBigHouseByTheLakeMargin = h / 8;
-                var aBigHouseByTheLakeMarginLower = h / 3;
+                var aBigHouseByTheLakeMarginLower = 3 * h / 7;
 
                 // set heights
                 $aBigHouseByTheLakeMargin.height(aBigHouseByTheLakeMargin);

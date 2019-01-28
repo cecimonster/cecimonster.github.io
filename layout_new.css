@@ -25,6 +25,10 @@ body {
     font-family: 'Ropa Sans', sans-serif;
 }
 
+span.nobr {
+    white-space: nowrap;
+}
+
 .album {
     padding-top: 25px;
     padding-bottom: 25px;
