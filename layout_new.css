@@ -87,7 +87,10 @@ span.nobr {
     font-weight: 200;
 }
 
-.download-abhbtl:hover,
+.download-abhbtl:hover {
+    cursor: not-allowed;
+}
+
 .download-eb:hover,
 .download-aa:hover,
 .download-s:hover,
