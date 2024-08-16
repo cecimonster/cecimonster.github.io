@@ -100,7 +100,8 @@ a.links:hover {
 }
 
 .links h4,
-.links-empty-beaches h4 {
+.links-empty-beaches h4,
+.links-empty-beaches a {
     font-weight: 200;
 }
 
