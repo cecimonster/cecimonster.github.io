@@ -371,6 +371,10 @@ area:hover {
         background: url(images/a-big-house-by-the-lake-mobile.jpg) no-repeat scroll;
         background-size: cover;
     }
+    .delilah {
+        background: url(images/delilah-mobile.jpg) no-repeat;
+        background-size: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -381,5 +385,9 @@ area:hover {
     .a-big-house-by-the-lake {
         background: url(images/a-big-house-by-the-lake-mobile.jpg) no-repeat scroll;
         background-size: cover;
+    }
+    .delilah {
+        background: url(images/delilah-mobile.jpg) no-repeat center center;
+        background-size: 100%;
     }
 }
