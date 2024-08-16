@@ -34,6 +34,18 @@ span.nobr {
     padding-bottom: 25px;
 }
 
+#delilah {
+    background: white;
+    height: 100vh;
+}
+
+.delilah {
+    background: url(images/delilah.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .a-big-house-by-the-lake {
     background: url(images/a-big-house-by-the-lake.jpg) no-repeat scroll;
     background-size: cover;
@@ -62,6 +74,7 @@ span.nobr {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.delilah-text,
 .a-big-house-by-the-lake-text,
 .empty-beaches-text,
 .adentro-afuera-text,
@@ -87,6 +100,7 @@ span.nobr {
     font-weight: 200;
 }
 
+.download-delilah:hover,
 .download-abhbtl:hover,
 .download-eb:hover,
 .download-aa:hover,
@@ -104,6 +118,10 @@ span.nobr {
 .highlighted {
     opacity: 1;
     border: solid 1px;
+}
+
+.delilah-margin {
+    height: calc(100vh - 240px);
 }
 
 .empty-beaches-margin-lower {

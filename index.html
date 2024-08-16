@@ -39,14 +39,46 @@
           content="http://cecimonstervsdonka.com/images/a-big-house-by-the-lake-fb-share.jpg" />
     <meta property="og:description"
           content="Official website of Peruvian alternative rock band
-                   Cecimonster vs Donka. Download A Big House by the Lake, Empty Beaches,
-                   Adentro - Afuera and Solara for free." />
+                   Cecimonster vs Donka. Download Delilah, A Big House By The Lake, Empty Beaches,
+                   Adentro - Afuera, and Solara for free." />
 </head>
 
 <body>
+    <!-- hidden link for delilah -->
+    <a class="hidden" id="delilah-zip" target="_blank"
+       href="albums/cecimonstervsdonka-delilah.zip"
+       onClick="_gaq.push(['_trackEvent','Albums','Downloaded','Delilah']);"
+       download
+    >
+       Delilah
+    </a>
+    <a class="hidden" id="delilah-art-zip" target="_blank"
+       href="albums/cecimonstervsdonka-delilah-art.zip"
+       onClick="_gaq.push(['_trackEvent','Art','Downloaded','Delilah']);"
+       download
+    >
+        Delilah (Art)
+    </a>
+
+    <!-- hidden link for a big house by the lake -->
+    <a class="hidden" id="abhbtl-zip" target="_blank"
+       href="albums/cecimonstervsdonka-a_big_house_by_the_lake.zip"
+       onClick="_gaq.push(['_trackEvent','Albums','Downloaded','A Big House By The Lake']);"
+       download
+    >
+        A Big House By The Lake
+    </a>
+    <a class="hidden" id="abhbtl-art-zip" target="_blank"
+       href="albums/cecimonstervsdonka-a_big_house_by_the_lake-art.zip"
+       onClick="_gaq.push(['_trackEvent','Art','Downloaded','A Big House By The Lake']);"
+       download
+    >
+        A Big House By The Lake (Art)
+    </a>
+
   <!-- hidden link for when i look up -->
   <a class="hidden" id="wilu-zip" target="_blank"
-     href="albums/cecimonstervsdonka_when-i-look-up.zip"
+     href="albums/cecimonstervsdonka-when_i_look_up.zip"
      onClick="_gaq.push(['_trackEvent','Albums','Downloaded','When I Look Up']);"
      download
    >
@@ -55,29 +87,116 @@
 
   <!-- hidden link for hombros descompuestos -->
   <a class="hidden" id="hd-zip" target="_blank"
-     href="albums/cecimonstervsdonka_hombros-descompuestos.zip"
+     href="albums/cecimonstervsdonka-hombros_descompuestos.zip"
      onClick="_gaq.push(['_trackEvent','Albums','Downloaded','Hombros Descompuestos']);"
      download
    >
       Hombros Descompuestos
   </a>
 <!-- main -->
+<div id="delilah" class="container-fluid">
+  <div class="album delilah">
+      <div class="row delilah-margin"></div>
+      <div class="row">
+          <div class="col-lg-6
+                    col-md-6
+                    col-sm-6
+                    col-xs-12 delilah-text links-delilah links">
+              <h4 class="black">follow:</h4>
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <a href="http://twitter.com/cecimonsters"
+                         onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Twitter']);"
+                         target="_blank">
+                          <span class="fa fa-twitter fa-2x black"></span>
+                      </a>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <a href="http://www.facebook.com/cecimonstervsdonk"
+                         onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Facebook']);"
+                         target="_blank" class="black">
+                        <span class="fa fa-facebook-official fa-2x black">
+                        </span>
+                      </a>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <a href="https://player.spotify.com/artist/1VsUpYfxYFg2WtGxrrJHDd"
+                         onClick="_gaq.push(['_trackEvent','Social Media', 'Click', 'Spotify']);"
+                         target="_blank">
+                          <span class="fa fa-spotify fa-2x black"></span>
+                      </a>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <a href="https://www.youtube.com/user/cecimonstervsdonka"
+                         onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'YouTube']);"
+                         target="_blank">
+                          <span class="fa fa-youtube fa-2x black"></span>
+                      </a>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <a href="https://instagram.com/cecimonstervsdonka"
+                         onClick="_gaq.push(['_trackEvent', 'Social Media', 'Click', 'Instagram']);"
+                         target="_blank">
+                          <span class="fa fa-instagram fa-2x black"></span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6
+                    col-md-8
+                    col-sm-12
+                    col-xs-12 delilah-text links-delilah links">
+              <h4 class="black">download:</h4>
+              <div class="row text-xs-center">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <img class="icon-64 muted download-s img-center"
+                           src="images/solara-128.png"
+                           alt="Download Solara" />
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <img class="icon-64 muted download-aa img-center"
+                           src="images/adentro-afuera-128.jpg"
+                           alt="Download Adentro - Afuera" />
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <img class="icon-64 highlighted download-eb img-center"
+                           src="images/empty-beaches-128.jpg"
+                           alt="Download Empty Beaches" />
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <img
+                              class="icon-64 muted download-abhbtl img-center"
+                              title="A Big House By The Lake"
+                              src="images/a-big-house-by-the-lake-128.jpg"
+                              alt="Download A Big House By The Lake"
+                      />
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                      <img
+                              class="icon-64 muted download-delilah img-center"
+                              title="Delilah"
+                              src="images/delilah-128.jpg"
+                              alt="Download Delilah"
+                      />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <div id="a-big-house-by-the-lake" class="container-fluid">
     <div class="album a-big-house-by-the-lake">
         <div class="row a-big-house-by-the-lake-margin"></div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white a-big-house-by-the-lake-text">
                 <h1 class="a-big-house-by-the-lake-band-name">
-                    <a
+                    <span
                       class="h1 a-big-house-by-the-lake-album-title"
-                      id="abhbtl-zip"
-                      target="_blank"
-                      href="albums/cecimonstervsdonka-a-big-house-by-the-lake.zip"
-                      onClick="_gaq.push(['_trackEvent','Albums','Downloaded','A Big House By The Lake']);"
-                      download
                     >
                         A Big House By The Lake
-                    </a>
+                    </span>
                     <span class="nobr">Cecimonster vs Donka</span>
                 </h1>
             </div>
@@ -159,6 +278,14 @@
                           alt="Download A Big House By The Lake"
                         />
                     </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <img
+                                class="icon-64 muted download-delilah img-center"
+                                title="Delilah"
+                                src="images/delilah-128.jpg"
+                                alt="Download Delilah"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,7 +304,8 @@
                         col-sm-offset-2 col-sm-5
                         col-xs-offset-0 col-xs-5 empty-beaches-detail">
                 <img src="images/empty-beaches-detail.png"
-                     class="empty-beaches-island"/>
+                     class="empty-beaches-island"
+                     alt="Empty Beaches Island" />
             </div>
         </div>
         <div class="row">
@@ -290,6 +418,14 @@
                                   alt="Download A Big House By The Lake"
                                 />
                             </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img
+                                        class="icon-64 muted download-delilah img-center"
+                                        title="Delilah"
+                                        src="images/delilah-128.jpg"
+                                        alt="Download Delilah"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -306,14 +442,15 @@
                         col-sm-offset-1 col-sm-6
                         col-xs-offset-1 col-xs-10">
                 <img src="images/rectangle-colors.jpg"
-                     class="img-responsive"/>
+                     class="img-responsive"
+                     alt="Rectangle with Colors" />
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <h1 class="adentro-afuera-title">CECIMONSTER VS DONKA</h1>
                 <a class="h1 album-title" id="aa-zip" target="_blank"
-                   href="albums/cecimonstervsdonka_adentro-afuera.zip"
+                   href="albums/cecimonstervsdonka-adentro_afuera.zip"
                    onClick="_gaq.push(['_trackEvent',
                                        'Albums',
                                        'Downloaded',
@@ -395,6 +532,14 @@
                           alt="Download A Big House By The Lake"
                         />
                     </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <img
+                                class="icon-64 muted download-delilah img-center"
+                                title="Delilah"
+                                src="images/delilah-128.jpg"
+                                alt="Download Delilah"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -406,7 +551,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <a class="h1 album-title" id="solara-zip" target="_blank"
-                   href="albums/cecimonstervsdonka_solara.zip"
+                   href="albums/cecimonstervsdonka-solara.zip"
                    onClick="_gaq.push(['_trackEvent',
                                            'Albums',
                                            'Downloaded',
@@ -486,6 +631,14 @@
                           alt="Download A Big House By The Lake"
                         />
                     </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <img
+                                class="icon-64 muted download-delilah img-center"
+                                title="Delilah"
+                                src="images/delilah-128.jpg"
+                                alt="Download Delilah"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -523,6 +676,7 @@
                 $('.download-abhbtl').off().click(function() {
                     document.getElementById('a-big-house-by-the-lake').scrollIntoView();
                     $('#abhbtl-zip')[0].click();
+                    $('#abhbtl-art-zip')[0].click();
                 });
             }
 
@@ -634,16 +788,26 @@
       });
     }
 
+    function handleClickDelilah() {
+        $('.download-delilah').off().click(function() {
+            document.getElementById('delilah').scrollIntoView();
+            $('#delilah-zip')[0].click();
+            $('#delilah-art-zip')[0].click();
+        });
+    }
+
     $(document).ready(function() {
       positionAlbums();
       handleClickWhenILookUp();
       handleClickHombrosDescompuestos();
+      handleClickDelilah();
     });
 
     $(window).resize(function() {
       positionAlbums();
       handleClickWhenILookUp();
       handleClickHombrosDescompuestos();
+      handleClickDelilah();
     });
 
 </script>
