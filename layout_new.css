@@ -95,6 +95,10 @@ span.nobr {
     font-weight: 200;
 }
 
+a.links:hover {
+    cursor: pointer;
+}
+
 .links h4,
 .links-empty-beaches h4 {
     font-weight: 200;

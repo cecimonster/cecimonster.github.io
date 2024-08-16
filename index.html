@@ -174,21 +174,23 @@
                            src="images/empty-beaches-128.jpg"
                            alt="Download Empty Beaches" />
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img
                               class="icon-64 muted download-abhbtl img-center"
                               title="A Big House By The Lake"
                               src="images/a-big-house-by-the-lake-128.jpg"
                               alt="Download A Big House By The Lake"
                       />
+                      <a class="black links abhbtl-art">Art</a>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img
                               class="icon-64 muted download-delilah img-center"
                               title="Delilah"
                               src="images/delilah-128.jpg"
                               alt="Download Delilah"
                       />
+                      <a class="black links delilah-art">Art</a>
                   </div>
               </div>
           </div>
@@ -286,7 +288,7 @@
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                           class="icon-64 muted download-abhbtl img-center"
                           title="A Big House By The Lake"
@@ -294,7 +296,7 @@
                           alt="Download A Big House By The Lake"
                         />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                                 class="icon-64 muted download-delilah img-center"
                                 title="Delilah"
@@ -433,7 +435,7 @@
                                      src="images/empty-beaches-128.jpg"
                                      alt="Download Empty Beaches" />
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img
                                   class="icon-64 muted download-abhbtl img-center"
                                   title="A Big House By The Lake"
@@ -441,7 +443,7 @@
                                   alt="Download A Big House By The Lake"
                                 />
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img
                                         class="icon-64 muted download-delilah img-center"
                                         title="Delilah"
@@ -554,21 +556,23 @@
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                           class="icon-64 muted download-abhbtl img-center"
                           title="A Big House By The Lake"
                           src="images/a-big-house-by-the-lake-128.jpg"
                           alt="Download A Big House By The Lake"
                         />
+                        <a class="magenta links abhbtl-art">Art</a>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                                 class="icon-64 muted download-delilah img-center"
                                 title="Delilah"
                                 src="images/delilah-128.jpg"
                                 alt="Download Delilah"
                         />
+                        <a class="magenta links delilah-art">Art</a>
                     </div>
                 </div>
             </div>
@@ -660,21 +664,23 @@
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                           class="icon-64 muted download-abhbtl img-center"
                           title="A Big House By The Lake"
                           src="images/a-big-house-by-the-lake-128.jpg"
                           alt="Download A Big House By The Lake"
                         />
+                        <a class="yellow links abhbtl-art">Art</a>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
                                 class="icon-64 muted download-delilah img-center"
                                 title="Delilah"
                                 src="images/delilah-128.jpg"
                                 alt="Download Delilah"
                         />
+                        <a class="yellow links delilah-art">Art</a>
                     </div>
                 </div>
             </div>
@@ -713,7 +719,6 @@
                 $('.download-abhbtl').off().click(function() {
                     document.getElementById('a-big-house-by-the-lake').scrollIntoView();
                     $('#abhbtl-zip')[0].click();
-                    // $('#abhbtl-art-zip')[0].click();
                 });
             }
 
@@ -833,18 +838,36 @@
         });
     }
 
+    function handleClickDelilahArt() {
+        $('.delilah-art').off().click(function() {
+            document.getElementById('delilah').scrollIntoView();
+            $('#delilah-art-zip')[0].click();
+        });
+    }
+
+    function handleClickABigHouseByTheLakeArt() {
+        $('.abhbtl-art').off().click(function() {
+            document.getElementById('a-big-house-by-the-lake').scrollIntoView();
+            $('#abhbtl-art-zip')[0].click();
+        });
+    }
+
     $(document).ready(function() {
       positionAlbums();
       handleClickWhenILookUp();
-      handleClickHombrosDescompuestos();
       handleClickDelilah();
+      handleClickDelilahArt()
+      handleClickABigHouseByTheLakeArt();
+      handleClickHombrosDescompuestos();
     });
 
     $(window).resize(function() {
       positionAlbums();
       handleClickWhenILookUp();
       handleClickHombrosDescompuestos();
+      handleClickABigHouseByTheLakeArt();
       handleClickDelilah();
+      handleClickDelilahArt()
     });
 
 </script>
