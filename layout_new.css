@@ -32,16 +32,24 @@ span.nobr {
 .album {
     padding-top: 25px;
     padding-bottom: 25px;
+    /* Absorbs the -15px side margins of the Bootstrap rows inside, so the
+       follow/download blocks can't overflow the viewport on small screens. */
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative;
 }
 
 /* Pins the follow/download blocks to the bottom of a section, matching
-   the newest releases (Adult Violence, Delilah). */
+   the newest releases (Adult Violence, Delilah). The side padding plays the
+   same overflow-absorbing role as on .album (this is absolutely positioned,
+   so it doesn't inherit .album's padding). */
 .album-links-bottom {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #adult-violence {
@@ -203,7 +211,10 @@ a.links:hover {
 
 .icon-64 {
     width: 64px;
-    height: 64px;
+    height: auto;
+    /* Never let a thumbnail grow past its column, so the row can't
+       overflow or overlap on small screens. */
+    max-width: 100%;
 }
 
 .img-center {
@@ -419,6 +430,11 @@ area:hover {
     .solara-title {
         font-size: 36px;
     }
+    /* Keep the non-wrapping "Cecimonster vs Donka" line from overflowing
+       on very narrow phones. */
+    .a-big-house-by-the-lake-band-name {
+        font-size: 30px;
+    }
     .a-big-house-by-the-lake {
         background: url(images/a-big-house-by-the-lake-mobile.jpg) no-repeat scroll;
         background-size: cover;
@@ -430,5 +446,16 @@ area:hover {
     .adult-violence {
         background: url(images/adult-violence-mobile.jpg) no-repeat center center;
         background-size: cover;
+    }
+}
+
+/* On phones the follow icons and album thumbnails are six-across, so
+   Bootstrap's default 15px column gutters leave almost no room. Tighten
+   them up so the thumbnails stay a usable size while still fitting. */
+@media (max-width: 767px) {
+    .links .col-xs-2,
+    .links-empty-beaches .col-xs-2 {
+        padding-left: 4px;
+        padding-right: 4px;
     }
 }
