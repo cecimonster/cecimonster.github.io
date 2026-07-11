@@ -34,6 +34,22 @@ span.nobr {
     padding-bottom: 25px;
 }
 
+#adult-violence {
+    background: #000;
+    height: 100vh;
+}
+
+.adult-violence {
+    background: url(images/adult-violence.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.adult-violence-margin {
+    height: calc(100vh - 240px);
+}
+
 #delilah {
     background: white;
     height: 100vh;
@@ -74,6 +90,7 @@ span.nobr {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.adult-violence-text,
 .delilah-text,
 .a-big-house-by-the-lake-text,
 .empty-beaches-text,
@@ -105,6 +122,7 @@ a.links:hover {
     font-weight: 200;
 }
 
+.download-av:hover,
 .download-delilah:hover,
 .download-abhbtl:hover,
 .download-eb:hover,
@@ -380,6 +398,10 @@ area:hover {
         background: url(images/delilah-mobile.jpg) no-repeat;
         background-size: 100%;
     }
+    .adult-violence {
+        background: url(images/adult-violence-mobile.jpg) no-repeat center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 480px) {
@@ -394,5 +416,9 @@ area:hover {
     .delilah {
         background: url(images/delilah-mobile.jpg) no-repeat center center;
         background-size: 100%;
+    }
+    .adult-violence {
+        background: url(images/adult-violence-mobile.jpg) no-repeat center center;
+        background-size: cover;
     }
 }
