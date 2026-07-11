@@ -32,6 +32,16 @@ span.nobr {
 .album {
     padding-top: 25px;
     padding-bottom: 25px;
+    position: relative;
+}
+
+/* Pins the follow/download blocks to the bottom of a section, matching
+   the newest releases (Adult Violence, Delilah). */
+.album-links-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
 }
 
 #adult-violence {
