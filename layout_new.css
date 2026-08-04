@@ -242,6 +242,10 @@ area:hover {
     color: #6c343d;
 }
 
+.magenta.links {
+    font-weight: bold;
+}
+
 .white {
     color: white;
 }
