@@ -95,6 +95,14 @@
         Empty Beaches (Art)
     </a>
 
+    <a class="hidden" id="aa-art-zip" target="_blank"
+       href="albums/cecimonstervsdonka-adentro_afuera-art.zip"
+       onClick="_gaq.push(['_trackEvent','Art','Downloaded','Adentro Afuera']);"
+       download
+    >
+        Adentro Afuera (Art)
+    </a>
+
   <!-- hidden link for when i look up -->
   <a class="hidden" id="wilu-zip" target="_blank"
      href="albums/cecimonstervsdonka-when_i_look_up.zip"
@@ -181,10 +189,12 @@
                            src="images/solara-128.png"
                            alt="Download Solara" />
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 muted download-aa img-center"
+                           title="Adentro - Afuera"
                            src="images/adentro-afuera-128.jpg"
                            alt="Download Adentro - Afuera" />
+                      <a class="white links aa-art">Art</a>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 muted download-eb img-center"
@@ -292,10 +302,12 @@
                            src="images/solara-128.png"
                            alt="Download Solara" />
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 muted download-aa img-center"
+                           title="Adentro - Afuera"
                            src="images/adentro-afuera-128.jpg"
                            alt="Download Adentro - Afuera" />
+                      <a class="black links aa-art">Art</a>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 highlighted download-eb img-center"
@@ -417,10 +429,12 @@
                              src="images/solara-128.png"
                              alt="Download Solara" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-aa img-center"
+                             title="Adentro - Afuera"
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
+                        <a class="white links aa-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 highlighted download-eb img-center"
@@ -579,10 +593,12 @@
                                      src="images/solara-128.png"
                                      alt="Download Solara" />
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img class="icon-64 muted download-aa img-center"
+                                     title="Adentro - Afuera"
                                      src="images/adentro-afuera-128.jpg"
                                      alt="Download Adentro - Afuera" />
+                                <a class="links aa-art black">Art</a>
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img class="icon-64 highlighted download-eb img-center"
@@ -712,10 +728,12 @@
                              src="images/solara-128.png"
                              alt="Download Solara" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 highlighted download-aa"
+                             title="Adentro - Afuera"
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
+                        <a class="magenta links aa-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-eb"
@@ -832,10 +850,12 @@
                              src="images/solara-128.png"
                              alt="Download Solara" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-aa"
+                             title="Adentro - Afuera"
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
+                        <a class="yellow links aa-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-eb"
@@ -1054,6 +1074,13 @@
         });
     }
 
+    function handleClickAdentroAfueraArt() {
+        $('.aa-art').off().click(function() {
+            document.getElementById('adentro-afuera').scrollIntoView();
+            $('#aa-art-zip')[0].click();
+        });
+    }
+
     $(document).ready(function() {
       positionAlbums();
       handleClickWhenILookUp();
@@ -1062,6 +1089,7 @@
       handleClickDelilahArt()
       handleClickABigHouseByTheLakeArt();
       handleClickEmptyBeachesArt();
+      handleClickAdentroAfueraArt();
       handleClickHombrosDescompuestos();
     });
 
@@ -1071,6 +1099,7 @@
       handleClickHombrosDescompuestos();
       handleClickABigHouseByTheLakeArt();
       handleClickEmptyBeachesArt();
+      handleClickAdentroAfueraArt();
       handleClickAdultViolence();
       handleClickDelilah();
       handleClickDelilahArt()
