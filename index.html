@@ -87,6 +87,14 @@
         A Big House By The Lake (Art)
     </a>
 
+    <a class="hidden" id="eb-art-zip" target="_blank"
+       href="albums/cecimonstervsdonka-empty_beaches-art.zip"
+       onClick="_gaq.push(['_trackEvent','Art','Downloaded','Empty Beaches']);"
+       download
+    >
+        Empty Beaches (Art)
+    </a>
+
   <!-- hidden link for when i look up -->
   <a class="hidden" id="wilu-zip" target="_blank"
      href="albums/cecimonstervsdonka-when_i_look_up.zip"
@@ -178,10 +186,12 @@
                            src="images/adentro-afuera-128.jpg"
                            alt="Download Adentro - Afuera" />
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 muted download-eb img-center"
+                           title="Empty Beaches"
                            src="images/empty-beaches-128.jpg"
                            alt="Download Empty Beaches" />
+                      <a class="white links eb-art">Art</a>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img
@@ -287,10 +297,12 @@
                            src="images/adentro-afuera-128.jpg"
                            alt="Download Adentro - Afuera" />
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img class="icon-64 highlighted download-eb img-center"
+                           title="Empty Beaches"
                            src="images/empty-beaches-128.jpg"
                            alt="Download Empty Beaches" />
+                      <a class="black links eb-art">Art</a>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                       <img
@@ -410,10 +422,12 @@
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 highlighted download-eb img-center"
+                             title="Empty Beaches"
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
+                        <a class="white links eb-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
@@ -570,10 +584,12 @@
                                      src="images/adentro-afuera-128.jpg"
                                      alt="Download Adentro - Afuera" />
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img class="icon-64 highlighted download-eb img-center"
+                                     title="Empty Beaches"
                                      src="images/empty-beaches-128.jpg"
                                      alt="Download Empty Beaches" />
+                                <a class="links eb-art black">Art</a>
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                                 <img
@@ -701,10 +717,12 @@
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-eb"
+                             title="Empty Beaches"
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
+                        <a class="magenta links eb-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
@@ -819,10 +837,12 @@
                              src="images/adentro-afuera-128.jpg"
                              alt="Download Adentro - Afuera" />
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img class="icon-64 muted download-eb"
+                             title="Empty Beaches"
                              src="images/empty-beaches-128.jpg"
                              alt="Download Empty Beaches" />
+                        <a class="yellow links eb-art">Art</a>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;">
                         <img
@@ -1027,6 +1047,13 @@
         });
     }
 
+    function handleClickEmptyBeachesArt() {
+        $('.eb-art').off().click(function() {
+            document.getElementById('empty-beaches').scrollIntoView();
+            $('#eb-art-zip')[0].click();
+        });
+    }
+
     $(document).ready(function() {
       positionAlbums();
       handleClickWhenILookUp();
@@ -1034,6 +1061,7 @@
       handleClickDelilah();
       handleClickDelilahArt()
       handleClickABigHouseByTheLakeArt();
+      handleClickEmptyBeachesArt();
       handleClickHombrosDescompuestos();
     });
 
@@ -1042,6 +1070,7 @@
       handleClickWhenILookUp();
       handleClickHombrosDescompuestos();
       handleClickABigHouseByTheLakeArt();
+      handleClickEmptyBeachesArt();
       handleClickAdultViolence();
       handleClickDelilah();
       handleClickDelilahArt()
