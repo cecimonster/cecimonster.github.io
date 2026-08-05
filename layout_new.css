@@ -115,6 +115,11 @@ span.nobr {
     overflow: hidden;
 }
 
+.empty-beaches-hero .empty-beaches-title h1 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 .empty-beaches-hero .empty-beaches-detail {
     flex: 0 0 auto;
     width: auto;
