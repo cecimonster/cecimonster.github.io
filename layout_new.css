@@ -102,17 +102,21 @@ span.nobr {
     max-width: 100%;
 }
 
-/* Keep the island at its natural aspect ratio at every viewport width:
-   the title flexes/clips to whatever space is left instead of the
-   island shrinking to fit. */
+/* Keep the island at its natural aspect ratio at every viewport width
+   instead of it shrinking as the viewport narrows. The title floats
+   on top of it (position: absolute) so it never competes for width. */
 .empty-beaches-hero {
     display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .empty-beaches-hero .empty-beaches-title {
-    flex: 1 1 0%;
-    min-width: 0;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    white-space: nowrap;
 }
 
 .empty-beaches-hero .empty-beaches-detail {

@@ -903,18 +903,6 @@
                 var $emptyBeachesTitle = $('.empty-beaches-title');
                 $emptyBeachesDetail.height(height / 2);
 
-                // Shrink the title so "cecimonster" always fits on one line
-                // instead of wrapping or overflowing past the island.
-                var $emptyBeachesTitleH1 = $emptyBeachesTitle.find('h1');
-                $emptyBeachesTitleH1.css('font-size', '');
-                var titleAvailableWidth = $emptyBeachesTitle.width();
-                var titleNaturalWidth = $emptyBeachesTitleH1[0].scrollWidth;
-                if (titleNaturalWidth > titleAvailableWidth) {
-                    var titleBaseFontSize = parseFloat($emptyBeachesTitleH1.css('font-size'));
-                    var titleScale = titleAvailableWidth / titleNaturalWidth;
-                    $emptyBeachesTitleH1.css('font-size', (titleBaseFontSize * titleScale) + 'px');
-                }
-
                 var marginTop = height / 4 + buffer;
                 var textHeight = $emptyBeachesTitle.height();
                 var textMargin = (height - textHeight) / 2 - marginTop - 50;
