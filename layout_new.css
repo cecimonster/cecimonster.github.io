@@ -102,6 +102,29 @@ span.nobr {
     max-width: 100%;
 }
 
+/* Keep the island at its natural aspect ratio at every viewport width:
+   the title flexes/clips to whatever space is left instead of the
+   island shrinking to fit. */
+.empty-beaches-hero {
+    display: flex;
+}
+
+.empty-beaches-hero .empty-beaches-title {
+    flex: 1 1 0%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.empty-beaches-hero .empty-beaches-detail {
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: 0;
+}
+
+.empty-beaches-hero .empty-beaches-island {
+    max-width: none;
+}
+
 .empty-beaches {
     background: url(images/empty-beaches.jpg) no-repeat scroll;
     background-size: cover;
